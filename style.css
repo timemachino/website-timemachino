@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Bungee', cursive;
+}
+
+/* @font-face {
+    font-family: "Bitstream Vera Serif Bold";
+    src: url("https://mdn.mozillademos.org/files/2468/Fuji_Quake_Zone.ttf") ;
+} */
+
+/* body {
+    background-color: #2a2a2a;
+    background-image: url('./assets/background.jpeg');
+    object-fit: cover;
+    width: 100%;
+}
+
+.logo-background {
+    width: 750px;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    opacity: .1;
+    transform: translate(-50%,-50%);
+    position: fixed;
+}
+
+.content {
+    z-index: 100;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px;
+}
+
+.img > img {
+    width: 450px;
+    height: 450px;
+}
+
+.tracks {
+    padding: 15px 15px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.navbar {
+    background-color: #000000;
+    height: 70px;
+    z-index: 80;
+    width: 100%;
+    color: #fff;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar ul > li:hover {
+    cursor: pointer;
+    color: #64bc95;
+}
+ */
+
