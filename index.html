@@ -26,64 +26,116 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;700&display=swap" rel="stylesheet">
     <!-- BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 
-<body class="select-none lg:select-auto relative h-screen">
+<body class="select-none lg:select-auto relative h-screen scroll-smooth">
     <div
-        class="z-[1] absolute h-screen w-screen bg-cover bg-no-repeat bg-center bg-[url('./assets/background-mobile.jpeg')] lg:bg-[url('./assets/background.jpeg')]">
-
+        class="z-[1] fixed h-screen w-screen bg-cover bg-no-repeat bg-center bg-[url('./assets/background-mobile.jpeg')] lg:bg-[url('./assets/background.jpeg')]">
     </div>
-    <div class="absolute z-[50] w-full">
-        <button onclick="onToggleMenu(this)"
-            class="block lg:hidden fixed right-0 text-white cursor-pointer m-5 text-xl hover:bg-gray-100/20 w-10 h-10 rounded-full">
-            <i class="bi bi-list"></i>
-        </button>
-        <nav class="hidden lg:block backdrop-blur-sm bg-black/70 bg-black">
-            <ul class="flex flex-row justify-center items-center text-white h-14 gap-4">
-                <a class="relative hover:before:content[''] hover:before:w-full hover:before:h-full hover:before:absolute hover:before:left-0 hover:before:bottom-0 hover:before:border-b-2 cursor-pointer duration-100 ease-in-out">Inicio</a>
-                <a class="relative hover:before:content[''] hover:before:w-full hover:before:h-full hover:before:absolute hover:before:left-0 hover:before:bottom-0 hover:before:border-b-2 cursor-pointer duration-100 ease-in-out">Nosotros</a>
-                <a class="relative hover:before:content[''] hover:before:w-full hover:before:h-full hover:before:absolute hover:before:left-0 hover:before:bottom-0 hover:before:border-b-2 cursor-pointer duration-100 ease-in-out">Galería</a>
-                <a class="relative hover:before:content[''] hover:before:w-full hover:before:h-full hover:before:absolute hover:before:left-0 hover:before:bottom-0 hover:before:border-b-2 cursor-pointer duration-100 ease-in-out">Discografía</a>
-                <a class="relative hover:before:content[''] hover:before:w-full hover:before:h-full hover:before:absolute hover:before:left-0 hover:before:bottom-0 hover:before:border-b-2 cursor-pointer duration-100 ease-in-out">Contacto</a>
+
+    <button onclick="onToggleMenu(this)"
+        class="z-[900] lg:hidden fixed right-0 text-white cursor-pointer m-5 text-xl hover:bg-gray-100/20 w-10 h-10 rounded-full">
+        <i class="bi bi-list"></i>
+    </button>
+
+    <div class="absolute w-full flex flex-col justify-center items-center">
+        <!-- NAVBAR -->
+        <nav class="hidden lg:fixed lg:block backdrop-blur-sm bg-black/70 bg-black w-full top-0 z-[100] h-fit">
+            <ul class="flex flex-row justify-center items-center text-white h-14 gap-4 font-bold">
+                <a href="#nosotros"
+                    class="relative hover:before:content[''] hover:before:w-full hover:before:h-full hover:before:absolute hover:before:left-0 hover:before:bottom-0 hover:before:border-b-2 cursor-pointer duration-100 ease-in-out">Nosotros</a>
+                <a href="#"
+                    class="relative hover:before:content[''] hover:before:w-full hover:before:h-full hover:before:absolute hover:before:left-0 hover:before:bottom-0 hover:before:border-b-2 cursor-pointer duration-100 ease-in-out">Galería</a>
+                <a href="#discografia"
+                    class="relative hover:before:content[''] hover:before:w-full hover:before:h-full hover:before:absolute hover:before:left-0 hover:before:bottom-0 hover:before:border-b-2 cursor-pointer duration-100 ease-in-out">Discografía</a>
+                <a href="#"
+                    class="relative hover:before:content[''] hover:before:w-full hover:before:h-full hover:before:absolute hover:before:left-0 hover:before:bottom-0 hover:before:border-b-2 cursor-pointer duration-100 ease-in-out">Contacto</a>
             </ul>
         </nav>
+        <!-- CONTENT -->
+        <div class="px-14 flex flex-col items-center gap-10 z-[10] mb-14 pt-14">
+            <!-- INICIO -->
+            <section id="nosotros" class="w-[330px] lg:w-[80%]">
+                <div class="text-white my-2">
+                    <div class="text-[2rem] font-bold">NOSOTROS</div>
+                    <hr>
+                </div>
+                <div
+                    class="backdrop-blur-sm bg-black/70 bg-black text-white rounded-xl p-5 flex flex-col justify-center h-full gap-4">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 place-content-center justify-center items-center">
+                        <div class="flex justify-center">
+                            <img src="./assets/logo.png" alt="TIME MACHINO" class="w-96">
+                        </div>
+                        <p class="text-white text-[1rem] font-bold text-justify">
+                            Somos una banda formada en el año 1970, todo comenzó con una reunión entre Kor y Vento en donde
+                            empezaron a tocar algunos riffs compuestos por cada uno luego se unió Basster y Pocastrancas
+                            para dar por terminada la alineacnón actual de la banda.
+                            <br>
+                            <br>
+                            En el año 1995 fueron teloneros de la mítica banda de Luchito, se considera uno de los conciertos más alucinantes de la historia, superando 
+                            a Metallica y Ozzy Osbourne, dentro de ese evento se generaron una gran cantidad de disturbios por los fans que querian acercarse a Luchito para besarlo, abrazarlo u obtener una firma.
+                            <br>
+                            <br>
+                            En el año 2004 Time Machino firma con Sony Music para poder mejorar la calidad musical y alcanzar aún a mas personas, el objetivo principal era superar a Luchito y su banda.
+                        </p>
+                    </div>
+                    <div class="grid gap-4 items-center justify-center grid-cols-1 lg:grid-cols-4 w-full place-content-center place-items-center">
+                        <img src="./assets/vento-yellow.jpeg" alt="TIME MACHINO" class="w-64 rounded-xl cursor-pointer">
+                        <img src="./assets/kor-yellow.jpeg" alt="TIME MACHINO" class="w-64 rounded-xl cursor-pointer">
+                        <img src="./assets/basster-yellow.jpeg" alt="TIME MACHINO" class="w-64 rounded-xl cursor-pointer">
+                        <img src="./assets/pocas-yellow.jpeg" alt="TIME MACHINO" class="w-64 rounded-xl cursor-pointer">
+                    </div>
+                </div>
+            </section>
+            <!-- DISCOGRAFIA -->
+            <section id="discografia" class="w-[320px] lg:w-[80%]">
+                <div class="text-white my-2">
+                    <div class="text-[2rem] font-bold">DISCOGRAFÍA</div>
+                    <hr>
+                </div>
+                <div class="backdrop-blur-sm bg-gray/70 bg-gray p-5">
+                    <div class="text-white p-2 grid grid-cols-1 lg:grid-cols-2 place-items-center w-full">
+                        <img class="my-4 w-96" src="./assets/album.png" alt="">
+                        <div class="flex flex-col justify-center gap-2">
+                            <iframe scrolling="no" frameborder="no" allow="autoplay"
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/796656649&amp;">
+                            </iframe>
+                            <iframe scrolling="no" frameborder="no" allow="autoplay"
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/857821507&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                            </iframe>
+                            <iframe scrolling="no" frameborder="no" allow="autoplay"
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/796605097&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                            <iframe scrolling="no" frameborder="no" allow="autoplay"
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/796596178&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- FOOTER -->
+        <footer
+            class="absolute w-full text-white text-[12px] flex flex-row justify-center bg-black bottom-0 p-2 mt-10 z-[10]">
+            <p>© 2023 · Time Machino · Todos los derechos reservados.</p>
+        </footer>
     </div>
 
+    <!-- MENU RESPONSIVE -->
     <div
-        class="nav-links lg:hidden backdrop-blur-sm bg-black/70 bg-black absolute w-full h-full top-[-100%] z-[70] duration-200">
+        class="nav-links lg:hidden backdrop-blur-sm bg-black/70 bg-black fixed w-full h-full top-[-100%] z-[1000] duration-200">
         <button onclick="onToggleMenu()"
             class="fixed top-0 right-0 text-white cursor-pointer m-5 text-xl hover:bg-gray-100/20 w-10 h-10 rounded-full"><i
                 class="bi bi-x-lg"></i></button>
-        <ul class="flex flex-col gap-8 justify-center items-center text-white h-full text-xl">
-            <a class="hover:scale-125 cursor-pointer duration-100 ease-in-out">Inicio</a>
-            <a class="hover:scale-125 cursor-pointer duration-100 ease-in-out">Nosotros</a>
-            <a class="hover:scale-125 cursor-pointer duration-100 ease-in-out">Galería</a>
-            <a class="hover:scale-125 cursor-pointer duration-100 ease-in-out">Discografía</a>
-            <a class="hover:scale-125 cursor-pointer duration-100 ease-in-out">Contacto</a>
+        <ul class="flex flex-col gap-8 justify-center items-center text-white h-full text-xl font-bold">
+            <a href="#nosotros" class="hover:scale-125 cursor-pointer duration-100 ease-in-out">Nosotros</a>
+            <a href="#" class="hover:scale-125 cursor-pointer duration-100 ease-in-out">Galería</a>
+            <a href="#discografia" class="hover:scale-125 cursor-pointer duration-100 ease-in-out">Discografía</a>
+            <a href="#" class="hover:scale-125 cursor-pointer duration-100 ease-in-out">Contacto</a>
         </ul>
     </div>
-
-    <!-- 
-    <div class="">
-        <div class="">
-            <img src="./assets/album.png" alt="">
-        </div>
-        <div class="">
-        
-            <iframe width="80%" height="110" scrolling="no" frameborder="no" allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/796656649&amp;">
-            </iframe>
-            <iframe width="80%" height="110" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/857821507&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
-            </iframe>
-            <iframe width="80%" height="110" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/796605097&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-            <iframe width="80%" height="110" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/796596178&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-
-        </div>
-        
-    </div> -->
     <script src="./index.js"></script>
 </body>
 
